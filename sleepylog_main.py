@@ -97,26 +97,10 @@ def main_draw_func(event):
 
     canvas1.create_text(210*coefficient_x, 20, font="Itim 20", anchor='center', text="Sleepy log", fill=colorID_High)
 
-    canvas2.create_text(20*coefficient_x, 20, font="Itim 10", anchor='center', text="19", fill=colorID)
-    canvas2.create_text(40*coefficient_x, 20, font="Itim 10", anchor='center', text="20", fill=colorID)
-    canvas2.create_text(60*coefficient_x, 20, font="Itim 10", anchor='center', text="21", fill=colorID)
-    canvas2.create_text(80*coefficient_x, 20, font="Itim 10", anchor='center', text="22", fill=colorID)
-    canvas2.create_text(100*coefficient_x, 20, font="Itim 10", anchor='center', text="23", fill=colorID_High)
-    canvas2.create_text(120*coefficient_x, 20, font="Itim 10", anchor='center', text="00", fill=colorID)
-    canvas2.create_text(140*coefficient_x, 20, font="Itim 10", anchor='center', text="01", fill=colorID)
-    canvas2.create_text(160*coefficient_x, 20, font="Itim 10", anchor='center', text="02", fill=colorID)
-    canvas2.create_text(180*coefficient_x, 20, font="Itim 10", anchor='center', text="03", fill=colorID)
-    canvas2.create_text(200*coefficient_x, 20, font="Itim 10", anchor='center', text="04", fill=colorID)
-    canvas2.create_text(220*coefficient_x, 20, font="Itim 10", anchor='center', text="05", fill=colorID)
-    canvas2.create_text(240*coefficient_x, 20, font="Itim 10", anchor='center', text="06", fill=colorID)
-    canvas2.create_text(260*coefficient_x, 20, font="Itim 10", anchor='center', text="07", fill=colorID_High)
-    canvas2.create_text(280*coefficient_x, 20, font="Itim 10", anchor='center', text="08", fill=colorID)
-    canvas2.create_text(300*coefficient_x, 20, font="Itim 10", anchor='center', text="09", fill=colorID)
-    canvas2.create_text(320*coefficient_x, 20, font="Itim 10", anchor='center', text="10", fill=colorID)
-    canvas2.create_text(340*coefficient_x, 20, font="Itim 10", anchor='center', text="11", fill=colorID)
-    canvas2.create_text(360*coefficient_x, 20, font="Itim 10", anchor='center', text="12", fill=colorID)
-    canvas2.create_text(380*coefficient_x, 20, font="Itim 10", anchor='center', text="13", fill=colorID)
-    canvas2.create_text(400*coefficient_x, 20, font="Itim 10", anchor='center', text="14", fill=colorID)
+    time_text = ['19','20','21','22','23','00','01','02','03','04','05','06','07','08','09','10','11','12','13','14']
+    for canvas2_time_text_number in range(len(time_text)):
+        canvas2.create_text((canvas2_time_text_number*20+20)* coefficient_x, 20, font="Itim 10", anchor='center', text=time_text[canvas2_time_text_number], fill=colorID)
+
 
     canvas3.create_line(100*coefficient_x, 0, 100*coefficient_x, 5000, fill=colorID, width=3, dash=(10, 10))
     canvas3.create_line(260*coefficient_x, 0, 260*coefficient_x, 5000, fill=colorID, width=3, dash=(10, 10))

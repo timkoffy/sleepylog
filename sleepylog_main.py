@@ -53,7 +53,10 @@ def average_sleep_time_func():
     for delta in range(len(output1_x1list)):
         delta_day.append(indexed_x2[delta]-indexed_x1[delta])
 
-    return round(sum(delta_day)/len(delta_day),4)
+    if sum(delta_day) > 0:
+        return round(sum(delta_day) / len(delta_day), 4)
+    else:
+        return 0
 
 def clear_all():
     clear_root = Tk()

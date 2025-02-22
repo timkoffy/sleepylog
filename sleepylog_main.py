@@ -99,7 +99,9 @@ def main_draw_func(event):
 
     time_text = ['19','20','21','22','23','00','01','02','03','04','05','06','07','08','09','10','11','12','13','14']
     for canvas2_time_text_number in range(len(time_text)):
-        canvas2.create_text((canvas2_time_text_number*20+20)* coefficient_x, 20, font="Itim 10", anchor='center', text=time_text[canvas2_time_text_number], fill=colorID)
+        if time_text[canvas2_time_text_number]=='23' or time_text[canvas2_time_text_number]=='07':
+            canvas2.create_text((canvas2_time_text_number * 20 + 20) * coefficient_x, 20, font="Itim 10", anchor='center', text=time_text[canvas2_time_text_number], fill=colorID_High)
+        else: canvas2.create_text((canvas2_time_text_number*20+20)* coefficient_x, 20, font="Itim 10", anchor='center', text=time_text[canvas2_time_text_number], fill=colorID)
 
 
     canvas3.create_line(100*coefficient_x, 0, 100*coefficient_x, 5000, fill=colorID, width=3, dash=(10, 10))

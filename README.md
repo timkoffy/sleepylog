@@ -1,4 +1,4 @@
-***Sleepylog***
+<img width="802" height="688" alt="image" src="https://github.com/user-attachments/assets/cfa804b7-96f5-4e64-a20a-2c076c456c7e" />
 
 **Sleepy Log** is a simple app designed to help you *track and visualize your sleep time*. 
 With **Sleepy Log**, you can easily *record the hours you sleep each night*. The app then 
